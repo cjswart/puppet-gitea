@@ -28,6 +28,6 @@ class gitea::packages (
   ) {
 
   if ($dependencies_ensure) {
-    ensure_packages($dependencies, {'ensure' => $dependencies_ensure})
+    stdlib::ensure_packages($dependencies, {'ensure' => $dependencies_ensure})
   }
 }

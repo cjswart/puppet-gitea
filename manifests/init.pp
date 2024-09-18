@@ -136,7 +136,7 @@ class gitea (
   String $service_provider,
   String $service_mode,
 
-  String $robots_txt,
+  String $robots_txt = '',
   ) {
 
   class { '::gitea::packages': }
